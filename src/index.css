@@ -5,9 +5,185 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:#464646;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  text-decoration: none;
+  color:#9F9F9F;
+}
+
+a:hover {
+  color:#464646;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.section { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: flex-start;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.sectionDiv {
+  padding-inline: 5rem;
+}
+
+/* NAVBAR */
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+}
+#navbar ul {
+  list-style: none;
+  padding: 2rem;
+  display: flex;
+}
+#navbar a {
+  padding-left: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px ) {
+  #navbar ul {
+    display: none;
+  }
+}
+
+/* HOME CAROUSEL */
+#carouselDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  
+}
+.carouselItem img {
+  width:100vw;
+}
+
+.imgOverlay {
+  opacity: .5;
+  background-color: black;
+  position: absolute;
+  left: 0; 
+  top: 0; 
+  width: 100%;
+  height: 100%; 
+}
+
+.carouselQuote {
+  position: absolute;
+  top: 50%;
+  transform: translate(-0%, -50%);
+  color: whitesmoke;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding: 3rem;
+}
+
+
+@media only screen and (max-width: 600px ) {
+  .carouselQuote {
+    font-size: 0.5rem;
+    line-height: 1rem;
+  }
+  
+}
+@media only screen and (min-width: 1400px ) {
+  .carouselQuote {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  
+}
+
+#carouselImage1 {
+  display: block;
+}
+#carouselImage2 {
+  display: none;
+}
+
+#carouselImage3 {
+  display: none;
+}
+
+
+/* ABOUT SECTION*/
+#aboutSection p{
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+#aboutSection a {
+  font-size: 2rem;
+  line-height: 4rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* SERVICES SECTION */
+.servicesItem {
+  height: 30vh;
+  font-size: 1.2rem;
+}
+
+
+/* CONTACT FORM */
+.contactFormItem {
+  display: grid;
+  padding: 0.5rem 1rem;
+  line-height: 2rem;
+}
+
+ button {
+  justify-self: end;
+  width: 20%;
+  padding-block: 0.3rem;
+  font-size: 1.1rem;
+  background-color: #D8D8D8;
+  border: solid 0.2rem #D8D8D8;
+  border-radius: 0.25rem;
+  color: #464646;
+}
+
+#emailAddress, #contactMessage {
+  padding: 0.5rem;
+  border: solid 1px #DFDFDF;
+  border-radius: 0.5rem;
+}
+
+
+/* FOOTER */
+#footer {
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  border-style: top black 2px;
+  border-top: 0.3rem solid #0000006b;
+  color: #9F9F9F;
+  font-weight: 700;
 }

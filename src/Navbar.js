@@ -1,7 +1,7 @@
 import logo from './images/logo.png';
 function Navbar() {
     return (
-        <nav>
+        <nav id="navbar">
             <div id="navLogo"> 
                 <a href="#">
                     <img src={logo} alt="company logo" />

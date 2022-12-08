@@ -2,7 +2,7 @@ import logo from "./images/logo.png"
 
 function Footer() {
     return (
-        <div>
+        <div id="footer">
             <div id="footerLogoCopyright">
                 <img src={logo} alt="company logo" />
                 <p>Copyright &#169; 2022</p>
@@ -10,10 +10,10 @@ function Footer() {
 
             <div id="footerLegal">
                 <div>
-                    <p>Privacy Policy</p>
+                    <p><a href="#">Privacy Policy</a></p>
                 </div>
                 <div>
-                    <p>Cookies</p>
+                    <p><a href="#">Cookies</a></p>
                 </div>
             </div>
 
