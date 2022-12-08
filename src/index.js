@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Navbar from "./Navbar";
+import Carousel from './Carousel';
+import About from './About';
+import ServicesList from './ServicesList';
+import ContactForm from './ContactForm';
+import Footer from './Footer';
+
 import reportWebVitals from './reportWebVitals';
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Navbar />
+    <Carousel />
+    <About />
+    <ServicesList />
+    <ContactForm />
+    <Footer />
   </React.StrictMode>
 );
 
